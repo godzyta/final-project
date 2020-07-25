@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a5b200803.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="current-date">
+            <h1>Sunday 14th June</h1>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="current-time">
+            <h2>10:19</h2>
+          </div>
+        </div>
+      </div>
+      <div class="search-elements">
+        <form class="form-inline" id="form">
+          <div class="form-group mx-sm-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              placeholder="Enter city"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary mb-2 mr-2"
+            id="submit-search"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="current-city">
+            <div class="city-detail" id="id-city-detail">
+              
+            </div>
+            <div class="city-temperature">
+              <img  alt="overcast clouds" id="icon" class="float-left">
+              <span class="temperature" id="temperature"></span>
+              <span class="units">°C</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="weather-info">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+              <li>Precipitation: <span id="precipitation"></span>%</li>
+            </ul>
+          </div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/wecodeschool/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Ada M.
+        </small>
+      </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

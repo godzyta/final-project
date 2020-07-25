@@ -1,0 +1,64 @@
+h1,
+h2 {
+  color: rgb(21, 101, 192);
+  font-size: 32px;
+  font-weight: 100px;
+  line-height: 28px;
+}
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.day {
+  color: rgb(66, 66, 66);
+  font-size: 22px;
+  text-align: center;
+}
+.temperature {
+  color: rgb(66, 66, 66);
+  font-size: 22px;
+}
+.current-city {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.weather-info {
+  padding: 10px;
+  margin: 30px;
+}
+.weather-detail {
+  color: rgb(66, 66, 66);
+}
+.city-detail {
+  color: rgb(66, 66, 66);
+  font-size: 35px;
+}
+.city-temperature {
+  color: rgb(66, 66, 66);
+  font-size: 45px;
+}
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+.current-time {
+  border-radius: 5px;
+  border: 3px solid rgba(21, 101, 192);
+  padding: 5px;
+  margin-left: 160px;
+  margin-right: 10px;
+  text-align: center;
+  background: rgba(79, 195, 247, 0.515);
+}
+.float-left {
+  margin-left: 10px;
+}
+.units {
+  font-size: 22px;
+}
