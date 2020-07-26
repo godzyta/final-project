@@ -4,9 +4,22 @@ h2 {
   font-size: 32px;
   font-weight: 100px;
   line-height: 28px;
+  margin: 20px 10px;
+  text-align: left;
 }
 .body {
   font-family: Arial, Helvetica, sans-serif;
+}
+.city-detail {
+  text-align: left;
+  font-size: 28px;
+  margin-left: 20px;
+}
+.description {
+  text-align: left;
+  font-size: 12px;
+  color: grey;
+  margin-left: 20px;
 }
 .day {
   color: rgb(66, 66, 66);
@@ -18,8 +31,6 @@ h2 {
   font-size: 22px;
 }
 .current-city {
-  padding: 10px;
-  margin: 10px;
   text-align: center;
 }
 li {
@@ -37,11 +48,7 @@ li {
   color: rgb(66, 66, 66);
   font-size: 45px;
 }
-.container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl {
+.container {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
@@ -62,4 +69,7 @@ li {
 }
 .units {
   font-size: 22px;
+}
+.footer {
+  text-align: center;
 }

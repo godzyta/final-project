@@ -1,5 +1,34 @@
-//WEEK 4
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
 
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${formatHours(timestamp)}`;
+}
+
+function formatHours(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+//WEEK 4
+/*
 let now = new Date();
 let days = [
   "Sunday",
@@ -33,7 +62,7 @@ let h1 = document.querySelector("h1");
 let h2 = document.querySelector("h2");
 h1.innerHTML = `${day} ${date}th ${month}`;
 h2.innerHTML = `${hours}:${minutes}`;
-
+*/
 //WEEK 5
 
 function showWeather(response) {
@@ -43,6 +72,8 @@ function showWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
   celsiusTemperature = response.data.main.temp;
 
   cityElement.innerHTML = response.data.name;
