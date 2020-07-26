@@ -37,7 +37,11 @@ li {
   color: rgb(66, 66, 66);
   font-size: 45px;
 }
-.container {
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
