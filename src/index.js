@@ -27,43 +27,6 @@ function formatHours(timestamp) {
 
   return `${hours}:${minutes}`;
 }
-//WEEK 4
-/*
-let now = new Date();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()]; //Sunday
-let date = now.getDate(); //28
-let months = [
-  "Jan",
-  "Feb",
-  "March",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-let month = months[now.getMonth()];
-let hours = now.getHours();
-let minutes = now.getMinutes();
-let h1 = document.querySelector("h1");
-let h2 = document.querySelector("h2");
-h1.innerHTML = `${day} ${date}th ${month}`;
-h2.innerHTML = `${hours}:${minutes}`;
-*/
-//WEEK 5
 
 function showWeather(response) {
   let cityElement = document.querySelector("#id-city-detail");
@@ -75,7 +38,6 @@ function showWeather(response) {
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   celsiusTemperature = response.data.main.temp;
-
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
