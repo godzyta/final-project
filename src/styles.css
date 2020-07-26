@@ -32,10 +32,7 @@ li {
 .weather-detail {
   color: rgb(66, 66, 66);
 }
-.city-detail {
-  color: rgb(66, 66, 66);
-  font-size: 35px;
-}
+
 .city-temperature {
   color: rgb(66, 66, 66);
   font-size: 45px;
